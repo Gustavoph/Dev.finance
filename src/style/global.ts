@@ -19,6 +19,7 @@ export const GLobalStyle = createGlobalStyle`
     --background: #F0F2F5;
 
     font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     background-color: var(--background);
   }

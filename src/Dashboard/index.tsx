@@ -1,9 +1,16 @@
 import React from "react";
-import { Container, Main } from './style';
+
+import { Container, Main, Header, Title } from './style';
+import Card from '../components/Card';
 
 const Dashboard: React.FC = () => (
   <Container>
-    <Main>Main</Main>
+    <Header>
+    <Title >Dev.finance</Title>
+    </Header>
+    <Main>
+      <Card></Card>
+    </Main>
   </Container>
 );
 
