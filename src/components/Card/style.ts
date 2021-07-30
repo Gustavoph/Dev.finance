@@ -19,6 +19,17 @@ export const Container = styled.div`
   gap: 3%;
   grid-template-areas: "earnings spending total";
   justify-items: space-between;
+
+  @media(max-width: 900px) {
+    margin-top: -11rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3%;
+    grid-template-areas: "earnings"
+    "spending" 
+    "total";
+    gap: 3%;
+  }
 `;
 
 

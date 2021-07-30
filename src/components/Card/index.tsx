@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Container, Value, Title, Paragraph } from './style';
-import ImgEntradas from '../assets/entradas.png';
-import ImgSaidas from '../assets/saidas.png';
-import ImgTotal from '../assets/total.png';
+import ImgEntradas from '../../assets/entradas.png';
+import ImgSaidas from '../../assets/saidas.png';
+import ImgTotal from '../../assets/total.png';
 
 const Card: React.FC = () => (
   <Container>

@@ -22,5 +22,9 @@ export const GLobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     width: 100%;
     background-color: var(--background);
+
+    @media(max-width: 800px) {
+      font-size: 42.5%;
+    }
   }
 `;

@@ -1,7 +1,9 @@
 import React from "react";
 
 import { Container, Main, Header, Title } from './style';
-import Card from '../components/Card';
+
+import Card from '../../components/Card';
+import History from '../../components/History';
 
 const Dashboard: React.FC = () => (
   <Container>
@@ -10,6 +12,7 @@ const Dashboard: React.FC = () => (
     </Header>
     <Main>
       <Card></Card>
+      <History></History>
     </Main>
   </Container>
 );
