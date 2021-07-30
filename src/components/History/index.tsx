@@ -49,5 +49,5 @@ const History: React.FC = () => {
         </>
     )
 };
-  
+
 export default History;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ChangeEvent, useState } from "react";
 
 import { Container, Card } from './style';
 
@@ -9,10 +9,17 @@ interface ModalProps {
     id?: string,
 }
 
-
 const Modal: React.FC<ModalProps> = ({ onClose = () => {}, id = 'modal' }:ModalProps) => {
     const handleOutsideClick = (e: any) => {
         if(e.target.id === id) onClose(false)
+    }
+
+    const [date, setDate] = useState<string | undefined>();
+
+    const changeDate = (e: ChangeEvent<HTMLInputElement>) => {
+      const date = e.target.value.toString();
+      console.log(typeof date);
+      setDate(date);
     }
 
     return (
@@ -20,9 +27,10 @@ const Modal: React.FC<ModalProps> = ({ onClose = () => {}, id = 'modal' }:ModalP
             <Container id={id} onClick={handleOutsideClick}>
                 <Card>
                     <Title>Nova Transação</Title>
+                    {`Data: ${date}`}
                     <Input type="text" placeholder="Descrição"/>
                     <Input type="text" placeholder="0,00"/>
-                    <Input type="date"/>
+                    <Input type="date" value={date} onChange={(e) => changeDate(e)}/>
                     <span>
                         <ButtonCancel onClick={() => onClose(false)}>
                             Cancelar
@@ -36,5 +44,5 @@ const Modal: React.FC<ModalProps> = ({ onClose = () => {}, id = 'modal' }:ModalP
         </>
     )
 };
-  
+
 export default Modal;

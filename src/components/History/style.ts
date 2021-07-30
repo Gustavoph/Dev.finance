@@ -1,4 +1,4 @@
-import styled from 'styled-components'; 
+import styled from 'styled-components';
 import RemoveImg from '../../assets/minus.svg';
 
 interface DivProps  {
@@ -19,7 +19,7 @@ export const Container = styled.div<ContainerProps>`
     grid-template-columns: repeat(3, 1fr) 10%;
     height: 6.4rem;
     background-color: ${(props) => props.color};
-    border-radius: .5rem;
+    border-radius: .5re m;
     grid-template-areas: "description value date remove";
     margin-bottom: 0.8rem;
     padding: 0rem 2rem;
