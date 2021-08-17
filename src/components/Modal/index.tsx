@@ -1,4 +1,6 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useContext, useState } from "react";
+import { GlobalContext } from "../../context/GlobalContext";
+import { addValue } from "../../context/GlobalContext/actions";
 
 import { Container, Card } from "./style";
 
