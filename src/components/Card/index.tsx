@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Container, Value, Title, Paragraph } from './style';
-import ImgEntradas from '../../assets/entradas.png';
-import ImgSaidas from '../../assets/saidas.png';
-import ImgTotal from '../../assets/total.png';
+import { Box, Container, Value, Title, Paragraph } from "./style";
+import ImgEntradas from "../../assets/entradas.png";
+import ImgSaidas from "../../assets/saidas.png";
+import ImgTotal from "../../assets/total.png";
 
 const Card: React.FC = () => (
   <Container>
@@ -11,7 +11,8 @@ const Card: React.FC = () => (
         <Paragraph color="title">Entradas</Paragraph>
         <img src={ImgEntradas} alt="" />
       </Title>
-      <Value color="title">R$ 1.259,00</Value>    </Box>
+      <Value color="title">R$ 1.259,00</Value>{" "}
+    </Box>
     <Box area="spending" color="white">
       <Title>
         <Paragraph color="title">Saídas</Paragraph>
@@ -24,7 +25,7 @@ const Card: React.FC = () => (
         <Paragraph>Total</Paragraph>
         <img src={ImgTotal} alt="" />
       </Title>
-      <Value>R$ 1.259,00</Value>
+      <Value>R$ 0</Value>
     </Box>
   </Container>
 );

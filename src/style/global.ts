@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GLobalStyle = createGlobalStyle`
   *{
@@ -23,7 +23,7 @@ export const GLobalStyle = createGlobalStyle`
     width: 100%;
     background-color: var(--background);
 
-    @media(max-width: 800px) {
+    @media(max-width: 900px) {
       font-size: 42.5%;
     }
   }
